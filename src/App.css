@@ -1,0 +1,47 @@
+.App {
+  display: flex;
+  justify-content: center;
+}
+
+.messages {
+  height: 100%;
+  overflow: auto;
+  max-width: 600px;
+
+  .message-left {
+    .message {
+      background-color: #bbb;
+    }
+  }
+
+  .message-right {
+    display: flex;
+    justify-content: flex-end;
+    .message {
+      background-color: #384c6c;
+      color: #fff;
+    }
+  }
+
+  .message-row {
+    .message {
+      width: 70%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 10px;
+  
+      .message-sender-id {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.send-button {
+  background-color: #384c6c;
+  border-radius: 5px;
+  margin-left: 5px;
+  color: #fff;
+  padding: 5px;
+}
